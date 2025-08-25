@@ -199,9 +199,9 @@ footer{padding:28px 0;text-align:center;color:#cfcfcf;border-top:1px solid rgba(
   </div>
 </section>
 
-      <!-- Tombol Emas -->
+      <!-- TOMBOL EMAS -->
 <a class="btn-gold" href="javascript:void(0)" onclick="tampilkanGaleri()">Lihat Galeri Hasil</a>
-      
+
 <!-- GALERI (disembunyikan dulu) -->
 <section id="galeri" class="hidden">
   <div class="container">
@@ -216,12 +216,16 @@ footer{padding:28px 0;text-align:center;color:#cfcfcf;border-top:1px solid rgba(
       <a class="thumb" href="https://via.placeholder.com/800x600" target="_blank">
         <img src="https://via.placeholder.com/300x200" alt="Hasil CNC 3">
       </a>
+      <a class="thumb" href="https://via.placeholder.com/800x600" target="_blank">
+        <img src="https://via.placeholder.com/300x200" alt="Hasil CNC 4">
+      </a>
     </div>
   </div>
 </section>
 
 <!-- STYLE -->
 <style>
+/* Tombol Emas */
 .btn-gold {
   display: inline-block;
   padding: 12px 24px;
@@ -233,22 +237,50 @@ footer{padding:28px 0;text-align:center;color:#cfcfcf;border-top:1px solid rgba(
   box-shadow: 0 4px 12px rgba(0,0,0,0.2);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
-
 .btn-gold:hover {
   transform: translateY(-2px);
   box-shadow: 0 6px 16px rgba(0,0,0,0.3);
 }
-</style>
-/* Saat ditampilkan dengan animasi */
+
+/* Galeri disembunyikan */
+#galeri.hidden {
+  display: none;
+  opacity: 0;
+}
+
+/* Saat muncul */
 #galeri.show {
   display: block;
   animation: fadeIn 1s ease forwards;
 }
 
-/* Keyframe animasi fade */
+/* Efek Fade-in */
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(30px); }
   to { opacity: 1; transform: translateY(0); }
+}
+
+/* Grid galeri */
+.gallery-wrap {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+  margin-top: 20px;
+}
+.gallery-wrap .thumb {
+  display: block;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  transition: transform 0.3s ease;
+}
+.gallery-wrap .thumb img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.gallery-wrap .thumb:hover {
+  transform: scale(1.05);
 }
 </style>
 
@@ -262,6 +294,7 @@ function tampilkanGaleri() {
 }
 </script>
 
+    
 
   
 <!-- KONTAK & PEMESANAN -->
