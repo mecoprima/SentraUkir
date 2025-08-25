@@ -203,7 +203,7 @@ footer{padding:28px 0;text-align:center;color:#cfcfcf;border-top:1px solid rgba(
 <a class="btn-gold" href="javascript:void(0)" onclick="tampilkanGaleri()">Lihat Galeri Hasil</a>
 
 <!-- GALERI (disembunyikan dulu) -->
-<section id="galeri" style="display:none;">
+<section id="galeri" class="hidden">
   <div class="container">
     <h2>Galeri Hasil Pekerjaan</h2>
     <div class="gallery-wrap">
@@ -220,13 +220,37 @@ footer{padding:28px 0;text-align:center;color:#cfcfcf;border-top:1px solid rgba(
   </div>
 </section>
 
+<!-- STYLE -->
+<style>
+/* Galeri default disembunyikan */
+#galeri.hidden {
+  display: none;
+  opacity: 0;
+}
+
+/* Saat ditampilkan dengan animasi */
+#galeri.show {
+  display: block;
+  animation: fadeIn 1s ease forwards;
+}
+
+/* Keyframe animasi fade */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+</style>
+
 <!-- SCRIPT -->
 <script>
 function tampilkanGaleri() {
-  document.getElementById("galeri").style.display = "block";
-  document.getElementById("galeri").scrollIntoView({ behavior: "smooth" });
+  const galeri = document.getElementById("galeri");
+  galeri.classList.remove("hidden");
+  galeri.classList.add("show");
+  galeri.scrollIntoView({ behavior: "smooth" });
 }
 </script>
+
 
   
 <!-- KONTAK & PEMESANAN -->
