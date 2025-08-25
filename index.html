@@ -223,6 +223,30 @@ footer{padding:28px 0;text-align:center;color:#cfcfcf;border-top:1px solid rgba(
   </div>
 </section>
 
+<!-- TOMBOL EMAS -->
+<a id="btnGaleri" class="btn-gold" href="javascript:void(0)" onclick="toggleGaleri()">Lihat Galeri Hasil</a>
+
+<!-- GALERI (disembunyikan dulu) -->
+<section id="galeri" class="hidden">
+  <div class="container">
+    <h2>Galeri Hasil Pekerjaan</h2>
+    <div class="gallery-wrap">
+      <a class="thumb" href="https://via.placeholder.com/800x600" target="_blank">
+        <img src="https://via.placeholder.com/300x200" alt="Hasil CNC 1">
+      </a>
+      <a class="thumb" href="https://via.placeholder.com/800x600" target="_blank">
+        <img src="https://via.placeholder.com/300x200" alt="Hasil CNC 2">
+      </a>
+      <a class="thumb" href="https://via.placeholder.com/800x600" target="_blank">
+        <img src="https://via.placeholder.com/300x200" alt="Hasil CNC 3">
+      </a>
+      <a class="thumb" href="https://via.placeholder.com/800x600" target="_blank">
+        <img src="https://via.placeholder.com/300x200" alt="Hasil CNC 4">
+      </a>
+    </div>
+  </div>
+</section>
+
 <!-- STYLE -->
 <style>
 /* Tombol Emas */
@@ -230,7 +254,7 @@ footer{padding:28px 0;text-align:center;color:#cfcfcf;border-top:1px solid rgba(
   display: inline-block;
   padding: 12px 24px;
   background: linear-gradient(45deg, #FFD700, #FFA500);
-  color: #fff;
+  color: #000; /* teks hitam */
   font-weight: bold;
   text-decoration: none;
   border-radius: 8px;
@@ -283,6 +307,28 @@ footer{padding:28px 0;text-align:center;color:#cfcfcf;border-top:1px solid rgba(
   transform: scale(1.05);
 }
 </style>
+
+<!-- SCRIPT -->
+<script>
+function toggleGaleri() {
+  const galeri = document.getElementById("galeri");
+  const btn = document.getElementById("btnGaleri");
+
+  if (galeri.classList.contains("hidden")) {
+    // Tampilkan galeri
+    galeri.classList.remove("hidden");
+    galeri.classList.add("show");
+    btn.innerText = "Sembunyikan Galeri"; // ubah teks tombol
+    galeri.scrollIntoView({ behavior: "smooth" });
+  } else {
+    // Sembunyikan galeri
+    galeri.classList.remove("show");
+    galeri.classList.add("hidden");
+    btn.innerText = "Lihat Galeri Hasil"; // kembalikan teks tombol
+  }
+}
+</script>
+
 
 <!-- SCRIPT -->
 <script>
