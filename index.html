@@ -114,12 +114,61 @@ footer{padding:28px 0;text-align:center;color:#cfcfcf;border-top:1px solid rgba(
       <a class="btn" href="https://wa.me/628114901407" target="_blank">WhatsApp Admin Designer</a>
       <a class="btn btn-outline" href="https://instagram.com/sentraukir_jayapura" target="_blank">Instagram</a>
 
-<!-- TENTANG KAMI -->
+      <!-- TENTANG KAMI -->
 <section class="about-section">
-  <h2>Tentang Kami</h2>
-  <p>Sentra Ukir/Meco Prima Jayapura adalah workshop spesialis cutting CNC, laser, router, dan plasma. Kami melayani berbagai jenis material seperti PVC, akrilik, MDF, triplex, aluminium, stainless, dan besi. Fokus kami adalah menghasilkan produk presisi, rapi, dan siap pasang untuk kebutuhan branding, signage, interior, dan industri.</p>
+  <div class="container">
+    <h2>Tentang Kami</h2>
+    <p>Sentra Ukir/Meco Prima Jayapura adalah workshop spesialis cutting CNC, laser, router, dan plasma. 
+    Kami melayani berbagai jenis material seperti PVC, akrilik, MDF, triplex, aluminium, stainless, dan besi. 
+    Fokus kami adalah menghasilkan produk presisi, rapi, dan siap pasang untuk kebutuhan branding, signage, interior, dan industri.</p>
+
+    <!-- Tambahan foto workshop -->
+    <div class="about-grid">
+      <div class="about-img">
+        <img src="https://lh3.googleusercontent.com/pw/AP1GczNIYkMm6XX8Obf3cxHGK6DXeuCWbrGLmV37r197_5oO_Wcb-8CvJ7T15O0WrxEF2aKBGkBEq6PuJL2JmB5xPC0otioArXn1TQ89VCX5zdSSH3L18v8=w2400?source=screenshot.guru" 
+             alt="Workshop Sentra Ukir Jayapura" loading="lazy">
+      </div>
+      <div class="about-text">
+        <h3>Workshop Kami</h3>
+        <p>Berlokasi di BTN Skyline Indah, Abepura – Jayapura. 
+        Workshop dilengkapi dengan mesin <strong>CNC Router, CNC Laser, dan CNC Plasma</strong> 
+        sehingga mampu memproses berbagai material dengan hasil presisi dan cepat. 
+        Tim kami berpengalaman dalam pengerjaan huruf timbul, ornamen dekorasi, signage toko, 
+        hingga kebutuhan industri skala besar.</p>
+      </div>
+    </div>
+  </div>
 </section>
-      
+
+<!-- Tambahan style -->
+<style>
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  margin-top: 28px;
+  align-items: center;
+}
+.about-img img {
+  border-radius: 16px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.25);
+}
+.about-text h3 {
+  margin: 0 0 10px;
+  font-size: 20px;
+  color: var(--gold);
+}
+.about-text p {
+  color: #f3e6a0;
+  line-height: 1.6;
+}
+@media(max-width: 768px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+}
+</style>
+
 <!-- MANFAAT UTAMA -->
 <section class="container benefits-section" aria-label="Manfaat Utama">
   <h2 class="section-title">Mengapa Memilih Kami</h2>
