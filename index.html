@@ -202,18 +202,34 @@ footer{padding:28px 0;text-align:center;color:#cfcfcf;border-top:1px solid rgba(
   </div>
 </section>
 
-  <!-- GALERI -->
-<section id="galeri">
-  <div class="container">
-    <h2 class="section-title">Galeri Hasil Pekerjaan</h2>
-    <p class="lead">Contoh hasil cutting & pemasangan berbagai material & desain</p>
-    <div class="gallery-wrap">
-      <div class="col">
-        <a class="thumb" href="#" target="_blank"><img src="https://lh3.googleusercontent.com/pw/AP1GczPRmHbY4M5qtl39IWcGzBrMhu5wfgUmcm_uKj0EpjPV3BNCV2QIJFA2kdEns6dFQOgH9V_x-jjgfkaQudMFMQB0ZH6Zbiq34531ov7oAzLPL_z3etw=w2400?source=screenshot.guru"Hasil 1"></a>
-        <a class="thumb" href="#" target="_blank"><img src="https://lh3.googleusercontent.com/pw/AP1GczNQJokxUtQU9eFFLLwUAEmrdkuwafkp3G1H482v-KD_2Not8_ofBnuYytty1L6dpChcoATNkKbU00H7lCNTOkz0D5kmslMRP2hIlu0aONzjQcF-fFw=w2400?source=screenshot.guru"Hasil cutting MDF"></a>
-        <a class="thumb" href="#" target="_blank"><img src="https://lh3.googleusercontent.com/pw/AP1GczMDKAmMZ_qukbwF05JWTTQHnsAcziw00DFRhDTF9g86HocBzRsBLJnTKBjfqWKhY6HGjlZX9LGQjo63TlOLLLdinD-OXpCC2iXCbKQnEOwGGxzOOok=w2400?source=screenshot.guru"Hasil cutting 3"></a>
-        <a class="thumb" href="#" target="_blank"><img src="https://lh3.googleusercontent.com/pw/AP1GczOEBNzn-XocMb-vfaoxv4-f8NY6FrZ4cjAGzRCHBb8BpnqrAxXYF6d5Vu_B9xL_QZY8PUhYIywu9Uue3oDTF0d1pjC8LKg5to09b3fsIC8_H9iE5dY=w2400?source=screenshot.guru"Hasil cutting 4"></a>
-        <a class="thumb" href="#" target="_blank"><img src="https://lh3.googleusercontent.com/pw/AP1GczN7QLv9-Pmd_V-EsI7vF1_6PHIEVC0JWVvvW5UETW9kdmJDRCwRB7ZI31q-ngdeaVc9rI77lNr0AP93WXKPjuyOsIjLYd_cPRPapKS2X6W1onv3FYg=w2400?source=screenshot.guru"Hasil cutting 5"></a>
+  <-- GOLD BUTTON -->
+.btn-gold {
+  --h:52px;
+  height:var(--h);
+  padding:0 22px;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  border-radius:calc(var(--h)/2);
+  font-weight:700;
+  background:linear-gradient(135deg,#b8860b,#ffd700,#e6c200,#b8860b);
+  background-size:300% 300%;
+  color:#111;
+  box-shadow:0 8px 22px rgba(212,175,55,.4);
+  border:1px solid #967f00;
+  position:relative;
+  overflow:hidden;
+  transition:transform .2s ease, background-position .6s ease;
+}
+.btn-gold:hover {
+  transform:translateY(-2px);
+  background-position:80% 30%;
+}
+.btn-gold:active {
+  transform:translateY(0);
+  filter:brightness(.95);
+}
+
   
   
   
