@@ -106,42 +106,9 @@ footer{padding:28px 0;text-align:center;color:#cfcfcf;border-top:1px solid rgba(
     <h1>Sentra Ukir CNC Jayapura</h1>
     <p>Spesialis jasa ukir CNC untuk huruf timbul, logo, ornamen, dan berbagai kebutuhan dekorasi di Jayapura.</p>
     <div class="cta">
-      <a class="btn" href="https://wa.me/628114901407" target="_blank">WhatsApp Admin Owner</a>
-      <a class="btn" href="https://wa.me/6281240953965" target="_blank">WhatsApp Admin Designer</a>
+      <a class="btn" href="https://wa.me/6281344644999" target="_blank">WhatsApp Admin Owner</a>
+      <a class="btn" href="https://wa.me/628114901407" target="_blank">WhatsApp Admin Designer</a>
       <a class="btn btn-outline" href="https://instagram.com/sentraukir_jayapura" target="_blank">Instagram</a>
-
-      <!-- Tambahan tombol emas -->
-      <a class="btn-gold" href="#galeri">Lihat Galeri Hasil</a>
-    </div>
-  </div>
-</section>
-
-<!-- GALERI -->
-<section id="galeri">
-  <div class="container">
-    <h2>Galeri Hasil Pekerjaan</h2>
-    <div class="gallery-wrap">
-      <a class="thumb" href="https://via.placeholder.com/800x600" target="_blank">
-        <img src="https://via.placeholder.com/300x200" alt="Hasil CNC 1">
-      </a>
-      <a class="thumb" href="https://via.placeholder.com/800x600" target="_blank">
-        <img src="https://via.placeholder.com/300x200" alt="Hasil CNC 2">
-      </a>
-      <a class="thumb" href="https://via.placeholder.com/800x600" target="_blank">
-        <img src="https://via.placeholder.com/300x200" alt="Hasil CNC 3">
-      </a>
-      <a class="thumb" href="https://via.placeholder.com/800x600" target="_blank">
-        <img src="https://via.placeholder.com/300x200" alt="Hasil CNC 4">
-      </a>
-      <a class="thumb" href="https://via.placeholder.com/800x600" target="_blank">
-        <img src="https://via.placeholder.com/300x200" alt="Hasil CNC 5">
-      </a>
-      <a class="thumb" href="https://via.placeholder.com/800x600" target="_blank">
-        <img src="https://via.placeholder.com/300x200" alt="Hasil CNC 6">
-      </a>
-    </div>
-  </div>
-</section>
 
 <!-- TENTANG KAMI -->
 <section class="about-section">
@@ -231,6 +198,36 @@ footer{padding:28px 0;text-align:center;color:#cfcfcf;border-top:1px solid rgba(
     </div>
   </div>
 </section>
+
+      <!-- Tombol Emas -->
+<a class="btn-gold" href="javascript:void(0)" onclick="tampilkanGaleri()">Lihat Galeri Hasil</a>
+
+<!-- GALERI (disembunyikan dulu) -->
+<section id="galeri" style="display:none;">
+  <div class="container">
+    <h2>Galeri Hasil Pekerjaan</h2>
+    <div class="gallery-wrap">
+      <a class="thumb" href="https://via.placeholder.com/800x600" target="_blank">
+        <img src="https://via.placeholder.com/300x200" alt="Hasil CNC 1">
+      </a>
+      <a class="thumb" href="https://via.placeholder.com/800x600" target="_blank">
+        <img src="https://via.placeholder.com/300x200" alt="Hasil CNC 2">
+      </a>
+      <a class="thumb" href="https://via.placeholder.com/800x600" target="_blank">
+        <img src="https://via.placeholder.com/300x200" alt="Hasil CNC 3">
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- SCRIPT -->
+<script>
+function tampilkanGaleri() {
+  document.getElementById("galeri").style.display = "block";
+  document.getElementById("galeri").scrollIntoView({ behavior: "smooth" });
+}
+</script>
+
   
 <!-- KONTAK & PEMESANAN -->
 <section id="kontak">
