@@ -270,7 +270,52 @@ footer{padding:28px 0;text-align:center;color:#cfcfcf;border-top:1px solid rgba(
     </div>
   </div>
 </section>
-      
+  
+      <!-- Tombol Galeri Video -->
+<button id="btnVideo" class="btn">Lihat Galeri Video</button>
+
+<!-- GALERI VIDEO (disembunyikan dulu) -->
+<section id="galeriVideo" class="hidden">
+  <div class="container">
+    <h2>Galeri Video</h2>
+    <div class="gallery-wrap">
+      <div class="thumb">
+        <iframe width="300" height="200" 
+          src="<div class="iframely-embed"><div class="iframely-responsive" style="padding-bottom: 52.5%; padding-top: 120px;"><a href="https://photos.google.com/share/AF1QipPieKHa3J2Bmu2ZbxFeyd923pWRr_sCMBGjyzwAia-ajhBgCN0J5-UxBqtJbIlLzQ?key=UmxxNUptRldDelppREprNTlPYm9GUE9tUUMwdkVB" data-iframely-url="//iframely.net/7mZ4xTJN?theme=dark"></a></div></div><script async src="//iframely.net/embed.js"></script>" 
+          title="Video CNC di YouTube" 
+          frameborder="0" 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+          allowfullscreen>
+        </iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+.hidden {
+  display: none;
+}
+.btn {
+  padding: 10px 15px;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.btn:hover {
+  background: #0056b3;
+}
+</style>
+
+<script>
+document.getElementById("btnVideo").addEventListener("click", function() {
+  const galeri = document.getElementById("galeriVideo");
+  galeri.classList.toggle("hidden");
+});
+</script>
+
 <!-- TOMBOL EMAS -->
 <a id="btnGaleri" class="btn-gold" href="javascript:void(0)" onclick="toggleGaleri()">Lihat Galeri Hasil</a>
 
