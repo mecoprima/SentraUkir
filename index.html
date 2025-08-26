@@ -247,7 +247,45 @@ footer{padding:28px 0;text-align:center;color:#cfcfcf;border-top:1px solid rgba(
     </div>
   </div>
 </section>
-  
+      
+  <!-- VIDEO HASIL KERJA -->
+<section id="video-hasil">
+  <div class="container">
+    <h2 class="section-title">Video Hasil Pekerjaan</h2>
+    <p class="lead">Beberapa dokumentasi proses dan hasil cutting CNC dari workshop kami.</p>
+    
+    <div class="video-wrapper">
+      <iframe width="100%" height="460" 
+        src="https://drive.google.com/file/d/1sbdAxCPZRg4MHJJU4q7Y6pkNqJuAxt7Y/view?usp=drivesdk" 
+        title="Video hasil cutting CNC" 
+        frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen 
+        loading="lazy"></iframe>
+    </div>
+  </div>
+</section>
+
+<!-- Tambahan style -->
+<style>
+.video-wrapper {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 ratio */
+  height: 0;
+  overflow: hidden;
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.25);
+  margin-top: 20px;
+}
+.video-wrapper iframe {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  border: 0;
+  border-radius: 16px;
+}
+</style>
+
     </div>
   </div>
 </section>
